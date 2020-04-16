@@ -8,7 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface <%= @name %> : NSObject
+@interface AppTransbankKeys : NSObject
 <% @keys.each do |key, value| %>
 @property (readonly) NSString *<%= key %>;<% end %>
 

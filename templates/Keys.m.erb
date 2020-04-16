@@ -7,14 +7,14 @@
 #import <Foundation/NSDictionary.h>
 #import "<%= @name %>.h"
 
-@interface <%= @name %> ()
+@interface AppTransbankKeys ()
 
 <% @keys.each do |key, value| %>@property (nonatomic, copy) NSString *<%= key %>;
 <% end %>
 
 @end
 
-@implementation <%= @name %>
+@implementation AppTransbankKeys
 
 - (instancetype)init
 {
@@ -32,7 +32,7 @@
         @"";
       <% end %>
     <% end %>
-    
+
     return self;
 }
 
